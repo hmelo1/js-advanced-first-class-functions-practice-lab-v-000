@@ -33,8 +33,7 @@ function driversByName(drivers){
 };
 
 function totalRevenue(drivers){
-  const finalRevenue = function (agg, driver){
-    return agg += driver.revenue;
-  };
-  drivers.reduce(finalRevenue, 0);
+  return drivers.reduce(function(finalRev, driver){
+    return finalRev + driver.revenue;
+  }, 0);
 };
