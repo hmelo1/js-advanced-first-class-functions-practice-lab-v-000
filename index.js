@@ -2,7 +2,11 @@
 
 function logDriverNames(drivers){
   const callback = function (driver) {
-    console.log(driver.name)
+    console.log(driver.name);
   }
   drivers.forEach(callback);
+};
+
+function logDriversByHometown(drivers){
+
 }
