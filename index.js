@@ -3,10 +3,15 @@
 function logDriverNames(drivers){
   const callback = function (driver) {
     console.log(driver.name);
-  }
+  };
   drivers.forEach(callback);
 };
 
-function logDriversByHometown(drivers){
-
-}
+function logDriversByHometown(drivers, location){
+  const callback = function (driver, location){
+    if (driver.location == location){
+      console.log(driver.name);
+    }
+  };
+  drivers.forEach(callback);
+};
