@@ -9,7 +9,7 @@ function logDriverNames(drivers){
 
 function logDriversByHometown(drivers, location){
   const callback = function (driver){
-    if (driver.location == location){
+    if (driver.hometown == location){
       console.log(driver.name);
     }
   };
