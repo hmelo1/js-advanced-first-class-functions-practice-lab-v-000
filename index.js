@@ -31,3 +31,10 @@ function driversByName(drivers){
   };
   return new_drivers.sort(driver_sort);
 };
+
+function totalRevenue(drivers){
+  const finalRevenue = function (agg, driver){
+    return agg + driver.revenue;
+  };
+  drivers.reduce(finalRevenue, 0);
+};
