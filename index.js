@@ -23,3 +23,11 @@ function driversByRevenue(drivers){
   };
   return new_drivers.sort(driver_sort);
 };
+
+function driversByName(drivers){
+  let new_drivers = drivers.slice(0)
+  const driver_sort = function (name1, name2){
+    return name1.name.localeCompare(name2,name)
+  };
+  return new_drivers.sort(driver_sort);
+};
