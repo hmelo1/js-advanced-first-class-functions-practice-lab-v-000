@@ -15,3 +15,7 @@ function logDriversByHometown(drivers, location){
   };
   drivers.forEach(callback);
 };
+
+function driversByRevenue(drivers){
+
+}
